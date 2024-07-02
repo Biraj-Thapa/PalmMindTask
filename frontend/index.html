@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palm Mind</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div id="forms">
+        <div id="register-form" class="form-container">
+          <h2>Register</h2>
+          <form>
+            <div class="form-group">
+              <label for="register-username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="register-username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="register-email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="register-password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+          <button id="show-login" class="btn btn-link">
+            Already have an account? Login
+          </button>
+        </div>
+
+        <div id="login-form" class="form-container d-none">
+          <h2>Login</h2>
+          <form>
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="login-email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="login-password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <button id="show-register" class="btn btn-link">
+            Don't have an account? Register
+          </button>
+          <button id="show-reset-password" class="btn btn-link">
+            Forgot Password?
+          </button>
+        </div>
+
+        <div id="reset-password-form" class="form-container d-none">
+          <h2>Reset Password</h2>
+          <form>
+            <div class="form-group">
+              <label for="reset-email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="reset-email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="reset-password">New Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="reset-password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Reset Password
+            </button>
+          </form>
+          <button id="show-login-from-reset" class="btn btn-link">
+            Back to Login
+          </button>
+        </div>
+      </div>
+
+      <div id="user-table-container" class="mt-5">
+        <h2>Registered Users</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+      </div>
+
+      <div
+        class="modal fade"
+        id="userModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="userModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="userModalLabel">Edit User</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="modalUsername">Username</label>
+                  <input type="text" class="form-control" id="modalUsername" />
+                </div>
+                <div class="form-group">
+                  <label for="modalEmail">Email</label>
+                  <input type="email" class="form-control" id="modalEmail" />
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Save changes
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
