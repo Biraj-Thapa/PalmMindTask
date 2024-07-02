@@ -58,3 +58,10 @@ If you have any feedback, please reach out to us at birajthapa983@gmail.com
 
 - [Biraj Thapa](https://github.com/Biraj-Thapa)
 
+## images
+
+![Screenshot (223)](https://github.com/Biraj-Thapa/PalmMindTask/assets/79743060/42abbd66-9832-4aa0-a23c-089f0abfdc3b)
+![Screenshot (224)](https://github.com/Biraj-Thapa/PalmMindTask/assets/79743060/d2c90689-8396-4253-863c-c105571f81af)
+![Screenshot (222)](https://github.com/Biraj-Thapa/PalmMindTask/assets/79743060/9dcfb7c5-c0d6-4d40-9205-213db2eb6905) 
+
+
